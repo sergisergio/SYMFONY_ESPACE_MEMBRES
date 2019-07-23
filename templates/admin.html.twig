@@ -13,20 +13,8 @@
 </style>
 
 <div class="example-wrapper">
-    <h1 id="connexion">Accueil</h1>
+    <h1 id="connexion">Accueil Administrateur</h1>
     <h3>Bonjour {{ app.user ? app.user.username }}</h3>
-    {% if app.user %}
-    <div>
-        <a href="{{ path('logout') }}">Déconnexion</a>
-    </div>
-    {% else %}
-    <div>
-        <a href="{{ path('login') }}">Connexion</a>
-    </div>
-    {% endif %}
 </div>
-
-
-
 </body>
 </html>
